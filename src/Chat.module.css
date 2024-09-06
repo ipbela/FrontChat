@@ -1,0 +1,93 @@
+/* Estilos do container principal do chat */
+.chatContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* Estilos do container de mensagens */
+.messagesContainer {
+    padding: 20px;
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+/* Estilo das mensagens do usuário */
+.userMessage {
+    text-align: right;
+    color: #ffffff;
+    background-color: #007bff;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-self: flex-end;
+    max-width: 80%;
+    position: relative;
+}
+
+/* Estilo das mensagens do bot */
+.botMessage {
+    text-align: left;
+    color: #333333;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    align-self: flex-start;
+    max-width: 80%;
+    position: relative;
+}
+
+/* Estilo do timestamp */
+.timestamp {
+    display: block;
+    font-size: 0.8rem;
+    margin-top: 5px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+.userMessage .timestamp {
+    color: #ffffff;
+}
+
+/* Estilo do container de botões de opção */
+.optionsContainer {
+    padding: 10px;
+    background-color: #f1f1f1;
+    border-top: 1px solid #dddddd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilo dos botões de opção */
+.optionButton {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.optionButton:hover {
+    background-color: #0056b3;
+}
+
+.feedback_imgs{
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+    margin-bottom: 20px;
+}
